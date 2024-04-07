@@ -5,25 +5,18 @@ import { useRef } from "react";
 
 function GettingStarted() {
   const container = useRef();
-  const tl = gsap.timeline({ paused: true, delay: 2, yoyo: true });
+  const tl = gsap.timeline({ paused: true, delay: 2 });
 
   useGSAP(
     () => {
-      // gsap.to(".box", {
-      //   x: 100,
-      //   rotate: "180deg",
-      //   scale: 0.2,
-      //   delay: 0.5,
-      //   stagger: 0.07,
-      //   duration: 1,
-      // });
-
-      tl.to(".box.b1", { rotation: -270, duration: 4, ease: "elastic" })
-        .to(".box.b2", { rotation: -360, duration: 4, ease: "elastic" })
-        .to(".box.b3", { rotation: -180, duration: 4, ease: "elastic" });
-
-      tl.play();
-      // tl.seek(0.2);
+      gsap.to(".box", {
+        x: 100,
+        rotate: "180deg",
+        scale: 0.2,
+        delay: 0.5,
+        stagger: 0.07,
+        duration: 1,
+      });
     },
     { scope: container }
   );

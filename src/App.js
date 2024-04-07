@@ -1,10 +1,12 @@
 import "./App.css";
 import GettingStarted from "./practice/GettingStarted";
+import TimelinePractice from "./practice/TimelinePractice";
 
 function App() {
   return (
     <>
-      <GettingStarted />
+      {/* <GettingStarted /> */}
+      <TimelinePractice />
     </>
   );
 }
