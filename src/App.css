@@ -3,6 +3,7 @@
 body {
   background-color: #333;
   font-family: "Teko", sans-serif;
+  height: 4000px;
 }
 
 .box {
@@ -10,4 +11,8 @@ body {
   height: 100px;
   background-color: azure;
   margin: 10px;
+}
+
+#smooth-wrapper {
+  height: 100%;
 }

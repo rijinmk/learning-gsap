@@ -21,7 +21,7 @@ function SplitTextPractice() {
           trigger: ".split",
           start: "top 80%",
           markers: true,
-          end: "bottom 20%",
+          end: "bottom 30%",
           toggleActions: "play reverse play reverse",
         },
       });
@@ -50,7 +50,7 @@ function SplitTextPractice() {
             marginLeft: "100px",
           }}
         >
-          I WILL COME BACK
+          I am going away okay see you
         </h1>
       </div>
       <div style={{ height: "300vh" }}></div>
