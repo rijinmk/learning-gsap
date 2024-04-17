@@ -1,4 +1,5 @@
 import "./App.css";
+import SmoothIntro from "./practice/CodeAlong/SmoothIntro/SmoothIntro";
 import GettingStarted from "./practice/GettingStarted";
 import ScrollSmootherPractice from "./practice/ScrollSmootherPractice";
 import SplitTextPractice from "./practice/SplitTextPractice";
@@ -10,7 +11,8 @@ function App() {
       {/* <GettingStarted /> */}
       {/* <TimelinePractice /> */}
       {/* <SplitTextPractice /> */}
-      <ScrollSmootherPractice />
+      {/* <ScrollSmootherPractice /> */}
+      <SmoothIntro />
     </>
   );
 }
