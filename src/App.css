@@ -183,7 +183,8 @@ body {
 
 /* Animation Two */
 
-.logo-container {
+.logo-container svg {
+  /* transform: rotate(45deg) scale(3); */
 }
 
 .logo-container .animation-two svg #C {
@@ -199,7 +200,7 @@ body {
 }
 
 .logo-container .animation-two svg #P {
-  fill: #5e18eb;
+  fill: #f99416;
 }
 
 .logo-container .animation-two svg #Y {

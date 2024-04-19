@@ -3,7 +3,7 @@ import CaspyLogo from "./CaspyLogo";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-const svgContainer = ".logo-container";
+const logoContainer = ".logo-container svg";
 const eachLetter = ".logo-container svg > g > path";
 const letterC = ".logo-container .animation-two svg #C";
 const letterA = ".logo-container .animation-two svg #A";
@@ -17,16 +17,15 @@ function LogoAnimationTwo() {
 
   useGSAP(
     () => {
-      tl.to(svgContainer, { transform: "scale(1)" })
-        .to(letterC, {
-          transform: "translate(0px, 0px) rotate(0deg)",
-          stagger: 0.4,
-          ease: "back.out",
-          duration: 0.5,
-        })
+      tl.to(letterC, {
+        transform: "translate(0px, 0px) rotate(0deg)",
+        stagger: 0.4,
+        ease: "back.out",
+        duration: 0.5,
+      })
         .to(
           letterC,
-          { strokeDasharray: 250, duration: 2, ease: "back.out" },
+          { strokeDasharray: 250, duration: 3, ease: "back.out" },
           "-=0.5"
         )
         .to(letterC, { fill: "#000" }, "-=2.5")
@@ -54,11 +53,13 @@ function LogoAnimationTwo() {
         )
         .to(letterA, { fill: "#000" }, "-=1")
         .to(letterP, { fill: "#000" }, "-=0.5")
+
+        // Exit
         .to(
           eachLetter,
           {
             y: -50,
-            ease: "back.out",
+            ease: "circ.out",
             stagger: 0.1,
             duration: 0.2,
           },
