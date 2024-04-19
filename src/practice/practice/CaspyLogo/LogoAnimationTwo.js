@@ -17,12 +17,16 @@ function LogoAnimationTwo() {
 
   useGSAP(
     () => {
-      tl.to(letterC, {
-        transform: "translate(0px, 0px) rotate(0deg)",
-        stagger: 0.4,
-        ease: "back.out",
-        duration: 0.5,
-      })
+      tl.to(
+        letterC,
+        {
+          transform: "translate(0px, 0px) rotate(0deg)",
+          stagger: 0.4,
+          ease: "back.out",
+          duration: 0.5,
+        },
+        "+=0.2"
+      )
         .to(
           letterC,
           { strokeDasharray: 250, duration: 2.5, ease: "back.out" },
