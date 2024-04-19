@@ -184,7 +184,7 @@ body {
 /* Animation Two */
 
 .logo-container svg {
-  /* transform: rotate(45deg) scale(3); */
+  transform: scale(4);
 }
 
 .logo-container .animation-two svg #C {

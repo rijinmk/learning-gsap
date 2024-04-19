@@ -25,7 +25,7 @@ function LogoAnimationTwo() {
       })
         .to(
           letterC,
-          { strokeDasharray: 250, duration: 3, ease: "back.out" },
+          { strokeDasharray: 250, duration: 2.5, ease: "back.out" },
           "-=0.5"
         )
         .to(letterC, { fill: "#000" }, "-=2.5")
@@ -53,7 +53,15 @@ function LogoAnimationTwo() {
         )
         .to(letterA, { fill: "#000" }, "-=1")
         .to(letterP, { fill: "#000" }, "-=0.5")
-
+        .to(
+          logoContainer,
+          {
+            transform: "rotate(0) scale(0.7)",
+            ease: "back.inOut",
+            duration: 2,
+          },
+          "-=2.5"
+        )
         // Exit
         .to(
           eachLetter,
