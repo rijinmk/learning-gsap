@@ -1,6 +1,8 @@
 import "./App.css";
 import SmoothIntro from "./practice/CodeAlong/SmoothIntro/SmoothIntro";
 import GettingStarted from "./practice/GettingStarted";
+import LogoAnimationOne from "./practice/practice/CaspyLogo/LogoAnimationOne";
+import LogoAnimationTwo from "./practice/practice/CaspyLogo/LogoAnimationTwo";
 import ScrollSmootherPractice from "./practice/ScrollSmootherPractice";
 import SplitTextPractice from "./practice/SplitTextPractice";
 import TimelinePractice from "./practice/TimelinePractice";
@@ -12,7 +14,11 @@ function App() {
       {/* <TimelinePractice /> */}
       {/* <SplitTextPractice /> */}
       {/* <ScrollSmootherPractice /> */}
-      <SmoothIntro />
+      {/* <SmoothIntro /> */}
+
+      {/* Logo Animation */}
+      {/* <LogoAnimationOne /> */}
+      <LogoAnimationTwo />
     </>
   );
 }

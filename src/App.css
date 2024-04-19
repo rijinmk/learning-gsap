@@ -8,8 +8,8 @@ body {
 }
 
 body {
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   font-family: "Roboto", sans-serif;
 }
 
@@ -143,4 +143,64 @@ body {
 
 .mini-header > span {
   margin: 80px;
+}
+
+.logo-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container svg {
+  fill: black;
+}
+
+.logo-container svg > g {
+  transform: translate(30%, 36%);
+}
+
+/* Animation one */
+.logo-container svg #C {
+  transform: translate(-60px, -60px) rotate(-45deg);
+}
+
+.logo-container svg #A {
+  transform: translate(-60px, 60px) rotate(45deg);
+}
+
+.logo-container svg #S {
+  transform: translate(0px, -30px) rotate(10deg);
+}
+
+.logo-container svg #P {
+  transform: translate(70px, 80px) rotate(30deg);
+}
+
+.logo-container svg #Y {
+  transform: translate(50px, -70px);
+}
+
+/* Animation Two */
+
+.logo-container {
+}
+
+.logo-container .animation-two svg #C {
+  fill: transparent;
+  stroke: #000;
+  stroke-dasharray: 100;
+}
+
+.logo-container .animation-two svg #A {
+  transform: translate(-60px, 60px) rotate(45deg) scale(0.5);
+  fill: transparent;
+  stroke: #000;
+}
+
+.logo-container .animation-two svg #P {
+  fill: #5e18eb;
+}
+
+.logo-container .animation-two svg #Y {
 }
