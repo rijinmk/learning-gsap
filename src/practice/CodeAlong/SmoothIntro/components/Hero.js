@@ -6,6 +6,8 @@ const name = ".name-container .name";
 const imageContainer = ".image-container";
 const line = ".name-container .line";
 const nameContainer = ".name-container";
+const spans = ".name-container span";
+const miniHeader = ".mini-header";
 
 function Hero() {
   const container = useRef();
@@ -24,6 +26,12 @@ function Hero() {
           imageContainer,
           { height: 2100, ease: "power3.out", duration: 8 },
           "-=4"
+        )
+        .to(spans, { stagger: 0.07, y: -400, ease: "back.inOut" }, "-=5")
+        .to(
+          miniHeader,
+          { stagger: 0.07, y: -196, x: -13, ease: "back.inOut", autoAlpha: 1 },
+          "-=5"
         );
     },
     { scope: container }
@@ -36,6 +44,11 @@ function Hero() {
           <span className="name">R</span>
           <span className="line"></span>
           <span className="name">M</span>
+          <div className="mini-header">
+            <span>HOME</span>
+            <span>ABOUT</span>
+            <span>CONTACT</span>
+          </div>
         </div>
         <div className="image-container"></div>
       </div>

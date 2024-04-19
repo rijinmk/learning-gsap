@@ -102,6 +102,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
 
   /* for gsap */
   opacity: 0;
@@ -128,4 +129,18 @@ body {
   bottom: 0px;
   mix-blend-mode: plus-lighter;
   background-image: url("./practice/CodeAlong/SmoothIntro/assets/bg.jpeg");
+}
+
+.mini-header {
+  position: absolute;
+}
+
+.mini-header {
+  font-weight: 600;
+  font-size: 20px;
+  opacity: 0;
+}
+
+.mini-header > span {
+  margin: 80px;
 }
