@@ -203,5 +203,51 @@ body {
   fill: #f99416;
 }
 
-.logo-container .animation-two svg #Y {
+/* Scroll Trigger Animation */
+
+.st-box {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.st-box .title-container {
+  /* border: 1px solid red; */
+  width: 100%;
+  text-align: center;
+}
+
+.st-box .title-container h1 {
+  /* border: 1px solid red; */
+  overflow: hidden;
+  padding: 60px 0px;
+  font-weight: 900;
+}
+
+.st-box .title-container h1 span {
+  transform: translate(0px, 50px);
+  display: inline-block;
+  /* border: 1px solid red; */
+  margin: 0px;
+  font-size: 3px;
+}
+
+.st-box.big {
+  height: auto;
+  padding: 40px;
+}
+
+.st-box .st-image-container {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 600px;
+}
+
+.st-box .st-image-container .image-box {
+  width: 200px;
+  height: 300px;
+  background-size: cover;
 }

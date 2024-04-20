@@ -3,6 +3,7 @@ import SmoothIntro from "./practice/CodeAlong/SmoothIntro/SmoothIntro";
 import GettingStarted from "./practice/GettingStarted";
 import LogoAnimationOne from "./practice/practice/CaspyLogo/LogoAnimationOne";
 import LogoAnimationTwo from "./practice/practice/CaspyLogo/LogoAnimationTwo";
+import ScrollTriggerPractice1 from "./practice/practice/ScrollTriggerPractice/ScrollTriggerPractice1";
 import ScrollSmootherPractice from "./practice/ScrollSmootherPractice";
 import SplitTextPractice from "./practice/SplitTextPractice";
 import TimelinePractice from "./practice/TimelinePractice";
@@ -18,7 +19,10 @@ function App() {
 
       {/* Logo Animation */}
       {/* <LogoAnimationOne /> */}
-      <LogoAnimationTwo />
+      {/* <LogoAnimationTwo /> */}
+
+      {/* Scroll Trigger Practice */}
+      <ScrollTriggerPractice1 />
     </>
   );
 }
