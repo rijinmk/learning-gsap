@@ -54,9 +54,17 @@ export const logoAnimationTwo = (selectors) => {
     .to(
       logoContainer,
       {
-        transform: "rotate(0) scale(0.7)",
+        transform: "rotate(0) scale(1)",
         ease: "back.inOut",
         duration: 2,
+      },
+      "-=2.5"
+    )
+    .to(
+      logoContainer,
+      {
+        autoAlpha: 1,
+        duration: 1,
       },
       "-=2.5"
     )

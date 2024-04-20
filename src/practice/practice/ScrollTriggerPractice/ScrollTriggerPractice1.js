@@ -29,8 +29,8 @@ function ScrollTriggerPractice1() {
           end: "bottom 50%",
           onUpdate: (self) => {
             const velocity = self.getVelocity();
-            const maxSkew = 20;
-            const skew = gsap.utils.clamp(-maxSkew, maxSkew, velocity / 100);
+            const maxSkew = 10;
+            const skew = gsap.utils.clamp(-maxSkew, maxSkew, velocity / 300);
             gsap.to(".st-box .st-image-container .image-box", {
               skewY: -skew,
               duration: 0.1,
