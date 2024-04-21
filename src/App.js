@@ -1,6 +1,7 @@
 import "./App.css";
 import SmoothIntro from "./practice/CodeAlong/SmoothIntro/SmoothIntro";
 import GettingStarted from "./practice/GettingStarted";
+import AfterlifeLogoAnimation from "./practice/practice/AfterlifeLogo/AfterlifeLogoAnimation";
 import LogoAnimationOne from "./practice/practice/CaspyLogo/LogoAnimationOne";
 import LogoAnimationTwo from "./practice/practice/CaspyLogo/LogoAnimationTwo";
 import ScrollTriggerPractice1 from "./practice/practice/ScrollTriggerPractice/ScrollTriggerPractice1";
@@ -20,9 +21,10 @@ function App() {
       {/* Logo Animation */}
       {/* <LogoAnimationOne /> */}
       {/* <LogoAnimationTwo /> */}
+      <AfterlifeLogoAnimation />
 
       {/* Scroll Trigger Practice */}
-      <ScrollTriggerPractice1 />
+      {/* <ScrollTriggerPractice1 /> */}
     </>
   );
 }

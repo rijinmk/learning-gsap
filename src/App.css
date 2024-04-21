@@ -211,17 +211,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .st-box .title-container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
   text-align: center;
 }
 
 .st-box .title-container h1 {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   overflow: hidden;
   padding: 60px 0px;
   font-weight: 900;
@@ -230,7 +230,7 @@ body {
 .st-box .title-container h1 span {
   transform: translate(0px, 50px);
   display: inline-block;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0px;
   font-size: 3px;
 }
@@ -255,12 +255,46 @@ body {
 }
 
 .st-box.scroll-within {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-color: aqua;
 }
 
 .scroll-within .within {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
   height: 100px;
+}
+
+/* Afterlife Logo Animation */
+.al-logo-container {
+  /* border: 1px solid red; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.al-logo-container svg {
+  /* border: 1px solid red; */
+  fill: #285857;
+  transform: scale(2);
+}
+
+.al-logo-container svg #A-leaf {
+  transform: scale(2) translate(56px, -27px);
+}
+
+.al-logo-container svg #leaf {
+  transform-origin: 32.5761px 31.6288px;
+}
+
+.al-logo-container svg .letters {
+  opacity: 0;
+  transform: translate(0px, 20px);
+}
+
+.al-logo-container svg #A {
+  fill: transparent;
+  stroke: #285857;
+  stroke-dasharray: 80;
 }
