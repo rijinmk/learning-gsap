@@ -7,36 +7,13 @@ function ScrollTriggerPractice1() {
 
   useGSAP(
     () => {
-      gsap.to(".st-box .title-container h1 span", {
-        transform: "translate(0px, 0px)",
-        stagger: 0.1,
-        margin: "10",
-        fontSize: "100px",
-        ease: "back.out",
+      gsap.to(".st-box.scroll-within", {
         scrollTrigger: {
-          trigger: ".title-container",
-          start: "top 50%",
-          end: "bottom 50%",
-          scrub: 1,
-        },
-      });
-
-      gsap.to(".st-box .st-image-container .image-box", {
-        scrollTrigger: {
-          trigger: ".st-box .st-image-container",
+          trigger: ".st-box.scroll-within",
+          start: "top+=50% 50%",
+          end: "+=1000px",
+          pin: true,
           markers: true,
-          start: "top 50%",
-          end: "bottom 50%",
-          onUpdate: (self) => {
-            const velocity = self.getVelocity();
-            const maxSkew = 10;
-            const skew = gsap.utils.clamp(-maxSkew, maxSkew, velocity / 300);
-            gsap.to(".st-box .st-image-container .image-box", {
-              skewY: -skew,
-              duration: 0.1,
-              ease: "back.put",
-            });
-          },
         },
       });
     },
@@ -48,8 +25,8 @@ function ScrollTriggerPractice1() {
       <div className="st-box">
         <p>Section 1</p>
       </div>{" "}
-      <div className="st-box">
-        <p>Section 2</p>
+      <div className="st-box scroll-within">
+        <div className="within">SECTION 2</div>
       </div>
       <div className="st-box">
         <div className="title-container">
