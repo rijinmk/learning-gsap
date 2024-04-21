@@ -53,7 +53,7 @@ function AfterlifeLogoAnimation() {
         .to(
           ".al-logo-container svg",
           { transform: "scale(0.5)", duration: 4, ease: "back.inOut" },
-          "-=5"
+          "-=5.5"
         )
         // exit
         .to(".al-logo-container svg #A-leaf", {
