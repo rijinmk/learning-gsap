@@ -21,7 +21,7 @@ function AfterlifeLogoAnimation() {
             strokeDasharray: 150,
             fill: "#285857",
             ease: "back.out",
-            duration: 4,
+            duration: 5,
           },
           "-=0.5"
         )
