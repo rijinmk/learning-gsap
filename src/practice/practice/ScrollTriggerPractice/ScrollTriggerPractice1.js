@@ -16,6 +16,39 @@ function ScrollTriggerPractice1() {
           markers: true,
         },
       });
+
+      gsap.to(".st-box .title-container h1 span", {
+        transform: "translate(0px, 0px)",
+        stagger: 0.1,
+        margin: "10",
+        fontSize: "100px",
+        ease: "back.out",
+        scrollTrigger: {
+          trigger: ".title-container",
+          start: "top 50%",
+          end: "bottom 50%",
+          scrub: 1,
+        },
+      });
+
+      gsap.to(".st-box .st-image-container .image-box", {
+        scrollTrigger: {
+          trigger: ".st-box .st-image-container",
+          markers: true,
+          start: "top 50%",
+          end: "bottom 50%",
+          onUpdate: (self) => {
+            const velocity = self.getVelocity();
+            const maxSkew = 10;
+            const skew = gsap.utils.clamp(-maxSkew, maxSkew, velocity / 300);
+            gsap.to(".st-box .st-image-container .image-box", {
+              skewY: -skew,
+              duration: 0.1,
+              ease: "back.put",
+            });
+          },
+        },
+      });
     },
     { scope: container }
   );
@@ -26,7 +59,32 @@ function ScrollTriggerPractice1() {
         <p>Section 1</p>
       </div>{" "}
       <div className="st-box scroll-within">
-        <div className="within">SECTION 2</div>
+        <div className="tabs">
+          <ul>
+            <li>tab 1</li>
+            <li>tab 2</li>
+            <li>tab 3</li>
+          </ul>
+          <div className="tab-indicator"></div>
+        </div>
+        <div className="tab-1">
+          TAB 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Adipisci maxime, architecto explicabo eveniet nobis in nemo
+          perspiciatis atque recusandae aspernatur iure alias fugit. Laborum
+          veniam officia dolor illo laudantium eligendi.
+        </div>
+        <div className="tab-1">
+          TAB 2 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Adipisci maxime, architecto explicabo eveniet nobis in nemo
+          perspiciatis atque recusandae aspernatur iure alias fugit. Laborum
+          veniam officia dolor illo laudantium eligendi.
+        </div>
+        <div className="tab-1">
+          TAB 3 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Adipisci maxime, architecto explicabo eveniet nobis in nemo
+          perspiciatis atque recusandae aspernatur iure alias fugit. Laborum
+          veniam officia dolor illo laudantium eligendi.
+        </div>
       </div>
       <div className="st-box">
         <div className="title-container">
