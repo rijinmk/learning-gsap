@@ -277,7 +277,7 @@ body {
 .al-logo-container svg {
   /* border: 1px solid red; */
   fill: #285857;
-  transform: scale(2);
+  transform: scale(1.5);
 }
 
 .al-logo-container svg #A-leaf {
