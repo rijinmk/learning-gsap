@@ -21,10 +21,10 @@ function App() {
       {/* Logo Animation */}
       {/* <LogoAnimationOne /> */}
       {/* <LogoAnimationTwo /> */}
-      {/* <AfterlifeLogoAnimation /> */}
+      <AfterlifeLogoAnimation />
 
       {/* Scroll Trigger Practice */}
-      <ScrollTriggerPractice1 />
+      {/* <ScrollTriggerPractice1 /> */}
     </>
   );
 }

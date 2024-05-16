@@ -1,9 +1,23 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 function ScrollTriggerPractice1() {
   const container = useRef();
+
+  const [numberList, setNumberList] = useState([]);
+
+  useEffect(() => {
+    console.log("New list");
+    console.log(numberList);
+  }, [numberList]);
+
+  const handleClick = () => {
+    numberList.push(Math.random() * 100);
+    let temp = numberList;
+    console.log(temp);
+    setNumberList(temp);
+  };
 
   useGSAP(
     () => {
@@ -73,18 +87,19 @@ function ScrollTriggerPractice1() {
           perspiciatis atque recusandae aspernatur iure alias fugit. Laborum
           veniam officia dolor illo laudantium eligendi.
         </div>
-        <div className="tab-1">
+        <div className="tab-2">
           TAB 2 Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Adipisci maxime, architecto explicabo eveniet nobis in nemo
           perspiciatis atque recusandae aspernatur iure alias fugit. Laborum
           veniam officia dolor illo laudantium eligendi.
         </div>
-        <div className="tab-1">
+        <div className="tab-3">
           TAB 3 Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Adipisci maxime, architecto explicabo eveniet nobis in nemo
           perspiciatis atque recusandae aspernatur iure alias fugit. Laborum
           veniam officia dolor illo laudantium eligendi.
         </div>
+        <button onClick={handleClick}>Click me!</button>
       </div>
       <div className="st-box">
         <div className="title-container">
